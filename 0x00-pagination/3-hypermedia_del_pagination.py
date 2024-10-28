@@ -36,7 +36,10 @@ class Server:
         return self.__indexed_dataset
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict[str, Any]:
-        """Return a page from the dataset indexed by position with resilient pagination."""
+        """
+        Return a page from the dataset indexed
+        by position with resilient pagination
+        """
         assert index is not None and 0 <= index < len(self.__indexed_dataset)
 
         data = []
